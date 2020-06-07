@@ -25,6 +25,21 @@ namespace SortTestHelper {
         return arr;
     }
 
+    int *generateNearlyOrderArray(int n, int swapTimes) {
+        int *arr = new int[n];
+        for (int i = 0; i < n; ++i) {
+            arr[i] = i;
+        }
+
+        srand(time(NULL));
+        for (int j = 0; j < swapTimes; ++j) {
+            int posx = rand() % n;
+            int posy = rand() % n;
+            swap(posx, posy);
+        }
+        return arr;
+    }
+
     int *copyIntArray(int a[], int n) {
 
         int *arr = new int[n];
@@ -50,7 +65,6 @@ namespace SortTestHelper {
         }
         return true;
     }
-
 
     template<typename T>
     void testSort(string sortName, void(*sort)(T[], int), T arr[], int n) {

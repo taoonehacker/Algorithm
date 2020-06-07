@@ -33,6 +33,55 @@ void insertionSort(T arr[], int n) {
     return;
 }
 
+template<typename T>
+void insertionSortAdvance(T arr[], int n) {
+    //i代表向右移动
+    for (int i = 1; i < n; ++i) {
+        //j代表向左移动
+        T e = arr[i];
+        int j;
+        for (j = i; j > 0 && arr[j - 1] > e; --j) {
+            arr[j] = arr[j - 1];
+        }
+        arr[j] = e;
+    }
+    return;
+}
+
+//冒泡排序
+template<typename T>
+void bubbleSort(T arr[], int n) {
+    bool swapped;
+
+    do {
+        swapped = false;
+        for (int i = 0; i < n; ++i) {
+            if (arr[i - 1] > arr[i]) {
+                swap(arr[i - 1], arr[i]);
+                swapped = true;
+            }
+        }
+        n--;
+    } while (swapped);
+}
+
+//冒泡排序优化
+template<typename T>
+void bubbleSortAdvance(T arr[], int n) {
+    int newn;
+    do {
+        newn = 0;
+        for (int i = 1; i < n; ++i) {
+            if (arr[i - 1] > arr[i]) {
+                swap(arr[i - 1], arr[i]);
+                // 记录最后一次交换的位置，在此之后的元素在下一轮扫描中均不考虑
+                newn = i;
+            }
+        }
+        n = newn;
+    } while (newn > 0);
+}
+
 int main() {
 
     int n = 20000;
@@ -40,12 +89,18 @@ int main() {
     cout << "Test for random array, size = " << n << ", random range [0, " << n << "]" << endl;
     int *arr1 = SortTestHelper::generateRandomArray(n, 0, n);
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);
+    int *arr3 = SortTestHelper::copyIntArray(arr1, n);
+    int *arr4 = SortTestHelper::copyIntArray(arr1, n);
 
-    SortTestHelper::testSort("Insertion Sort", insertionSort, arr1, n);
+    SortTestHelper::testSort("Insertion Sort", insertionSortAdvance, arr1, n);
     SortTestHelper::testSort("Section Sort", selectionSort, arr2, n);
+    SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
+    SortTestHelper::testSort("Bubble Sort 2", bubbleSort, arr4, n);
 
     delete[] arr1;
     delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
     return 0;
 
     int a[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};

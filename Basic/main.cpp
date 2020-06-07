@@ -82,6 +82,31 @@ void bubbleSortAdvance(T arr[], int n) {
     } while (newn > 0);
 }
 
+//希尔排序
+template<typename T>
+void shellSort(T arr[], int n) {
+    // 计算 increment sequence: 1, 4, 13, 40, 121, 364, 1093...
+    int h = 1;
+    while (h < n / 3)
+        h = 3 * h + 1;
+
+    while (h >= 1) {
+
+        // h-sort the array
+        for (int i = h; i < n; i++) {
+
+            // 对 arr[i], arr[i-h], arr[i-2*h], arr[i-3*h]... 使用插入排序
+            T e = arr[i];
+            int j;
+            for (j = i; j >= h && e < arr[j - h]; j -= h)
+                arr[j] = arr[j - h];
+            arr[j] = e;
+        }
+
+        h /= 3;
+    }
+}
+
 int main() {
 
     int n = 20000;
@@ -91,16 +116,42 @@ int main() {
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);
     int *arr3 = SortTestHelper::copyIntArray(arr1, n);
     int *arr4 = SortTestHelper::copyIntArray(arr1, n);
+    int *arr5 = SortTestHelper::copyIntArray(arr1, n);
 
     SortTestHelper::testSort("Insertion Sort", insertionSortAdvance, arr1, n);
     SortTestHelper::testSort("Section Sort", selectionSort, arr2, n);
     SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
     SortTestHelper::testSort("Bubble Sort 2", bubbleSort, arr4, n);
+    SortTestHelper::testSort("Shell Sort", shellSort, arr5, n);
 
     delete[] arr1;
     delete[] arr2;
     delete[] arr3;
     delete[] arr4;
+    delete[] arr5;
+
+    cout<<endl;
+
+    // 测试2 测试近乎有序的数组
+    int swapTimes = 100;
+
+    cout<<"Test for nearly ordered array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+
+    arr1 = SortTestHelper::generateNearlyOrderedArray(n, swapTimes);
+    arr2 = SortTestHelper::copyIntArray(arr1, n);
+    arr3 = SortTestHelper::copyIntArray(arr1, n);
+    arr4 = SortTestHelper::copyIntArray(arr1, n);
+
+    SortTestHelper::testSort("Selection Sort", selectionSort, arr1, n);
+    SortTestHelper::testSort("Insertion Sort", insertionSort, arr2, n);
+    SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
+    SortTestHelper::testSort("Shell Sort", shellSort, arr4, n);
+
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
+
     return 0;
 
     int a[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};

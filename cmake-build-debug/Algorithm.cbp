@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/SelectionSort/SortTestHelper.h">
+			<Option target="Algorithm"/>
+		</Unit>
+		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/SelectionSort/Student.h">
+			<Option target="Algorithm"/>
+		</Unit>
 		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/SelectionSort/main.cpp">
 			<Option target="Algorithm"/>
 		</Unit>

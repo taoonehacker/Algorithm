@@ -57,27 +57,27 @@ include CMakeFiles/Algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Algorithm.dir/flags.make
 
-CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o: CMakeFiles/Algorithm.dir/flags.make
-CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o: ../SelectionSort/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tao/Projects/GitHub/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o -c /Users/tao/Projects/GitHub/Algorithm/SelectionSort/main.cpp
+CMakeFiles/Algorithm.dir/Basic/main.cpp.o: CMakeFiles/Algorithm.dir/flags.make
+CMakeFiles/Algorithm.dir/Basic/main.cpp.o: ../Basic/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tao/Projects/GitHub/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Algorithm.dir/Basic/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Algorithm.dir/Basic/main.cpp.o -c /Users/tao/Projects/GitHub/Algorithm/Basic/main.cpp
 
-CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tao/Projects/GitHub/Algorithm/SelectionSort/main.cpp > CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.i
+CMakeFiles/Algorithm.dir/Basic/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Algorithm.dir/Basic/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tao/Projects/GitHub/Algorithm/Basic/main.cpp > CMakeFiles/Algorithm.dir/Basic/main.cpp.i
 
-CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tao/Projects/GitHub/Algorithm/SelectionSort/main.cpp -o CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.s
+CMakeFiles/Algorithm.dir/Basic/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Algorithm.dir/Basic/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tao/Projects/GitHub/Algorithm/Basic/main.cpp -o CMakeFiles/Algorithm.dir/Basic/main.cpp.s
 
 # Object files for target Algorithm
 Algorithm_OBJECTS = \
-"CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o"
+"CMakeFiles/Algorithm.dir/Basic/main.cpp.o"
 
 # External object files for target Algorithm
 Algorithm_EXTERNAL_OBJECTS =
 
-Algorithm: CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o
+Algorithm: CMakeFiles/Algorithm.dir/Basic/main.cpp.o
 Algorithm: CMakeFiles/Algorithm.dir/build.make
 Algorithm: CMakeFiles/Algorithm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tao/Projects/GitHub/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Algorithm"

@@ -80,13 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/SelectionSort/SortTestHelper.h">
+		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/Basic/SortTestHelper.h">
 			<Option target="Algorithm"/>
 		</Unit>
-		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/SelectionSort/Student.h">
+		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/Basic/Student.h">
 			<Option target="Algorithm"/>
 		</Unit>
-		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/SelectionSort/main.cpp">
+		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/Basic/main.cpp">
 			<Option target="Algorithm"/>
 		</Unit>
 		<Unit filename="/Users/tao/Projects/GitHub/Algorithm/CMakeLists.txt">

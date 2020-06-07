@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/tao/Projects/GitHub/Algorithm/SelectionSort/SortTestHelper.h
+/Users/tao/Projects/GitHub/Algorithm/Basic/SortTestHelper.h
 iostream
 -
 
-/Users/tao/Projects/GitHub/Algorithm/SelectionSort/Student.h
+/Users/tao/Projects/GitHub/Algorithm/Basic/Student.h
 string
 -
 iostream
 -
 
-/Users/tao/Projects/GitHub/Algorithm/SelectionSort/main.cpp
+/Users/tao/Projects/GitHub/Algorithm/Basic/main.cpp
 iostream
 -
 Student.h
-/Users/tao/Projects/GitHub/Algorithm/SelectionSort/Student.h
+/Users/tao/Projects/GitHub/Algorithm/Basic/Student.h
 SortTestHelper.h
-/Users/tao/Projects/GitHub/Algorithm/SelectionSort/SortTestHelper.h
+/Users/tao/Projects/GitHub/Algorithm/Basic/SortTestHelper.h
 

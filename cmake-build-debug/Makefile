@@ -123,32 +123,32 @@ Algorithm/fast:
 	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/build
 .PHONY : Algorithm/fast
 
-SelectionSort/main.o: SelectionSort/main.cpp.o
+Basic/main.o: Basic/main.cpp.o
 
-.PHONY : SelectionSort/main.o
+.PHONY : Basic/main.o
 
 # target to build an object file
-SelectionSort/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.o
-.PHONY : SelectionSort/main.cpp.o
+Basic/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/Basic/main.cpp.o
+.PHONY : Basic/main.cpp.o
 
-SelectionSort/main.i: SelectionSort/main.cpp.i
+Basic/main.i: Basic/main.cpp.i
 
-.PHONY : SelectionSort/main.i
+.PHONY : Basic/main.i
 
 # target to preprocess a source file
-SelectionSort/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.i
-.PHONY : SelectionSort/main.cpp.i
+Basic/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/Basic/main.cpp.i
+.PHONY : Basic/main.cpp.i
 
-SelectionSort/main.s: SelectionSort/main.cpp.s
+Basic/main.s: Basic/main.cpp.s
 
-.PHONY : SelectionSort/main.s
+.PHONY : Basic/main.s
 
 # target to generate assembly for a file
-SelectionSort/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/SelectionSort/main.cpp.s
-.PHONY : SelectionSort/main.cpp.s
+Basic/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/Basic/main.cpp.s
+.PHONY : Basic/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Algorithm"
-	@echo "... SelectionSort/main.o"
-	@echo "... SelectionSort/main.i"
-	@echo "... SelectionSort/main.s"
+	@echo "... Basic/main.o"
+	@echo "... Basic/main.i"
+	@echo "... Basic/main.s"
 .PHONY : help
 
 
